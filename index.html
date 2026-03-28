@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Nabeel Ahmed| Web Developer & Graphic Designer</title>
+     <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+    <div class="gradient-bg"></div>
+    <div class="glitch-overlay"></div>
+
+    <div class="container">
+      <nav>
+            <div class="logo">Nabeel Ahmed</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certs</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu" id="closeMenu">✕</button>
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#certifications" class="mobile-nav-link">Certifications</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <!-- 1. HERO SECTION (Original premium style) -->
+        <section id="home">
+            <div class="hero">
+                <div class="hero-left" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="hero-badge"><i class="fas fa-code"></i> + <i class="fas fa-shield-alt"></i> Developer &
+                        Software Engineer</span>
+                    <h1>Crafting <span class="hero-highlight">Designing & Developing</span><br>Impactful Digital
+                        Experiences</h1>
+                    <p class="hero-desc">I'm Nabeel Ahmed — a Developer and Graphic Designer. I blend creativity and
+                        code to create beautiful, user-friendly, and engaging digital products.</p>
+                    <div class="cta-group">
+                        <button class="btn-primary"
+                            onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View
+                            Projects →</button>
+                        <a href="/pdf/Nabeel-Ahmed-CV.pdf"><button class="btn-outline" id="downloadCVBtn">Download
+                                CV</button></a>
+                        <button class="btn-outline"
+                            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact
+                            Me</button>
+                    </div>
+                </div>
+              <div class="hero-right" data-aos="zoom-in" data-aos-delay="200">
+    <div class="floating-card">
+        <div class="profile-image-container">
+            <img src="/images/hero.jpg" alt="Nabeel Ahmed" class="profile-image">
+        </div>
+        <div class="skill-icons">
+            <i class="fab fa-react"></i>
+            <i class="fab fa-wordpress"></i>
+            <i class="fas fa-paint-brush"></i>
+            <i class="fas fa-network-wired"></i>
+            <i class="fas fa-shield-alt"></i>
+            <i class="fab fa-js"></i>
+        </div>
+        <p style="text-align:center; margin-top:1rem;">💻 Web Developer<br>🎨 Graphic Designer<br>⚙️ Software Engineer</p>
+    </div>
+</div>
+        </section>
+
+        <!-- STATS marquee -->
+        <div class="stats-marquee">
+            <div class="stats-track">
+                <span><i class="fas fa-check-circle"></i> 45+ Projects Completed</span>
+                <!-- <span><i class="fas fa-shield-alt"></i> 15+ Security Audits</span> -->
+                <span><i class="fas fa-network-wired"></i> 20+ Graphic designer Project</span>
+                <span><i class="fas fa-globe"></i> 20+ Clients</span>
+                <span><i class="fas fa-code"></i> 30+ GitHub Repos</span>
+                <span><i class="fas fa-check-circle"></i> 45+ Projects Completed</span>
+                <!-- <span><i class="fas fa-shield-alt"></i> 15+ Security Audits</span> -->
+            </div>
+        </div>
+
+        <!-- 2. ABOUT ME -->
+        <section id="about">
+            <h2 class="section-title" data-aos="fade-right">👤 About Me</h2>
+            <div class="about-content" data-aos="fade-up">
+                <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">I am a Software Engineering
+                    student passionate about building modern digital solutions. With 2 years of experience in WordPress
+                    development and 1 year in graphic design, I combine creativity and technical skills to create
+                    engaging and user-friendly experiences.</p>
+                <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <div><i class="fas fa-graduation-cap" style="color:#6c63ff;"></i> <strong>Background:</strong> SE
+                        Student @ ILMA University</div>
+                    <div><i class="fas fa-bullseye" style="color:#6c63ff;"></i> <strong>Goal:</strong> Web Developer
+                    </div>
+                    <div><i class="fas fa-heart" style="color:#6c63ff;"></i> <strong>Passion:</strong> CTF Challenges &
+                        Open Source</div>
+                </div>
+            </div>
+        </section>
+        <!-- 4. SKILLS SECTION with progress bars -->
+        <section id="skills">
+            <h2 class="section-title" data-aos="fade-right">🛠️ Skills</h2>
+            <div class="skills-grid">
+
+                <!-- Development -->
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code" style="font-size: 2rem;"></i>
+                    <h3>Development</h3>
+                    <span>WordPress</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:90%"></div>
+                    </div>
+                    <span>Website Customization</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:85%"></div>
+                    </div>
+                    <span>HTML / CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:88%"></div>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="skill-card">
+                    <i class="fas fa-palette" style="font-size: 2rem;"></i>
+                    <h3>Graphic Design</h3>
+                    <span>Canva</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:90%"></div>
+                    </div>
+                    <span>Social Media Design</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:85%"></div>
+                    </div>
+                    <span>Branding Basics</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="skill-card">
+                    <i class="fas fa-briefcase" style="font-size: 2rem;"></i>
+                    <h3>Professional Skills</h3>
+                    <span>Project Management</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:85%"></div>
+                    </div>
+                    <span>Team Management</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:88%"></div>
+                    </div>
+                    <span>Sales & Communication</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:82%"></div>
+                    </div>
+                </div>
+
+                <!-- Tools & Soft Skills -->
+                <div class="skill-card">
+                    <i class="fas fa-tools" style="font-size: 2rem;"></i>
+                    <h3>Tools & Soft Skills</h3>
+                    <span>MS Word</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:90%"></div>
+                    </div>
+                    <span>Problem Solving</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:92%"></div>
+                    </div>
+                    <span>Time Management</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:85%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. PROJECTS SECTION (Important) -->
+     <div class="container">
+        <section id="projects">
+            <h2 class="section-title">💼 Featured Projects</h2>
+            
+            <!-- Info Banner -->
+            <!-- <div class="behance-banner">
+                <p>✨ <strong>12 Projects</strong> showcased below — including web development, WordPress sites, and creative designs</p>
+                <p>🎨 Plus <span class="highlight">15+ additional creative projects</span> available on my Behance portfolio!</p>
+            </div>
+             -->
+            <!-- Initial 6 Projects -->
+            <div class="projects-grid" id="initialProjectsGrid">
+                <!-- Project 1 - Bright Hope Global TV -->
+                <div class="project-card" onclick="openProjectModal('project1')">
+                    <img class="project-img" src="/images/Project2.png" alt="Bright Hope Global TV" onclick="event.stopPropagation(); openProjectModal('project1')">
+                    <h3>Bright Hope Global TV</h3>
+                    <p>Bright Hope Global TV is a media platform dedicated to spreading positivity, education, and inspiring content worldwide. It focuses on sharing knowledge, motivational programs, and meaningful stories that bring hope to audiences of all ages.</p>
+                    <div>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="link-icons" onclick="event.stopPropagation()">
+                        <a href="https://brighthopeglobal.org/" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+                        <a href="#" onclick="openProjectModal('project1'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Divinity Events -->
+                <div class="project-card" onclick="openProjectModal('project2')">
+                    <img class="project-img" src="/images/project3.png" alt="Divinity Events" onclick="event.stopPropagation(); openProjectModal('project2')">
+                    <h3>Divinity Events</h3>
+                    <p>Divinity Events is a creative event management platform specializing in planning elegant, memorable, and seamless experiences. From weddings to corporate gatherings, it brings vision to life with unique themes and professional coordination.</p>
+                    <div>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="link-icons" onclick="event.stopPropagation()">
+                        <a href="https://divinityevents.co/" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+                        <a href="#" onclick="openProjectModal('project2'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 - AK Foundation -->
+                <div class="project-card" onclick="openProjectModal('project3')">
+                    <img class="project-img" src="/images/Project4.png" alt="AK Foundation" onclick="event.stopPropagation(); openProjectModal('project3')">
+                    <h3>AK Foundation</h3>
+                    <p>AK Foundation is a non-profit organization committed to supporting communities through education, social welfare, and humanitarian efforts. It works to uplift lives by providing resources, opportunities, and hope to those in need.</p>
+                    <div>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Donation System</span>
+                    </div>
+                    <div class="link-icons" onclick="event.stopPropagation()">
+                        <a href="https://akfoundations.org/" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+                        <a href="#" onclick="openProjectModal('project3'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Living Water Church -->
+                <div class="project-card" onclick="openProjectModal('project4')">
+                    <img class="project-img" src="/images/Project5.png" alt="Living Water Apostolic Church" onclick="event.stopPropagation(); openProjectModal('project4')">
+                    <h3>Living Water Apostolic Church Dubai</h3>
+                    <p>Living Water Apostolic Church Dubai is a faith-based community dedicated to spiritual growth, worship, and spreading the message of hope and salvation. It provides a welcoming environment for believers to connect and grow in their faith.</p>
+                    <div>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Live Streaming</span>
+                    </div>
+                    <div class="link-icons" onclick="event.stopPropagation()">
+                        <a href="https://lwacintl.org/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" onclick="openProjectModal('project4'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Yammsul -->
+                <div class="project-card" onclick="openProjectModal('project5')">
+                    <img class="project-img" src="/images/project6.png" alt="Yammsul" onclick="event.stopPropagation(); openProjectModal('project5')">
+                    <h3>Yammsul</h3>
+                    <p>Yammsul is a creative décor brand specializing in stylish and elegant event designs. It transforms spaces into beautiful, memorable settings with unique themes, modern aesthetics, and attention to detail for every occasion.</p>
+                    <div>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Custom Design</span>
+                    </div>
+                    <div class="link-icons" onclick="event.stopPropagation()">
+                        <a href="https://yammsal.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" onclick="openProjectModal('project5'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Pro Clinique -->
+                <div class="project-card" onclick="openProjectModal('project6')">
+                    <img class="project-img" src="/images/project7.png" alt="Pro Clinique" onclick="event.stopPropagation(); openProjectModal('project6')">
+                    <h3>Pro Clinique</h3>
+                    <p>Pro Clinique is a professional healthcare and aesthetic center dedicated to providing high-quality medical and beauty treatments. It focuses on advanced care, modern techniques, and personalized services to enhance health and wellness.</p>
+                    <div>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Booking System</span>
+                    </div>
+                    <div class="link-icons" onclick="event.stopPropagation()">
+                        <a href="https://proclinique.se/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" onclick="openProjectModal('project6'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden Projects (6 more - total 12) -->
+            <div id="hiddenProjectsWrapper" class="hidden-projects-wrapper">
+                <div class="projects-grid" id="extraProjectsGrid">
+                    <!-- Project 7 - Niagara Falls Christian Ministries -->
+                    <div class="project-card" onclick="openProjectModal('project7')">
+                        <img class="project-img" src="/images/project8.png" alt="Niagara Falls Christian Ministries" onclick="event.stopPropagation(); openProjectModal('project7')">
+                        <h3>Niagara Falls Christian Ministries</h3>
+                        <p>Niagara Falls Christian Ministries is a faith-based organization dedicated to spreading the message of hope, love, and salvation. It serves the community through worship, outreach programs, and spiritual guidance.</p>
+                        <div>
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">Live Streaming</span>
+                        </div>
+                        <div class="link-icons" onclick="event.stopPropagation()">
+                            <a href="https://nfcmchurch.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" onclick="openProjectModal('project7'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 8 - Compassionate Hearts -->
+                    <div class="project-card" onclick="openProjectModal('project8')">
+                        <img class="project-img" src="/images/project9.png" alt="Compassionate Hearts" onclick="event.stopPropagation(); openProjectModal('project8')">
+                        <h3>Compassionate Hearts</h3>
+                        <p>Compassionate Hearts is a caring initiative dedicated to helping people access life's basic necessities. It supports individuals and families by providing essential resources, kindness, and hope for a better future.</p>
+                        <div>
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">Donation System</span>
+                        </div>
+                        <div class="link-icons" onclick="event.stopPropagation()">
+                            <a href="https://thecompassionatehearts.co/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" onclick="openProjectModal('project8'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 9 - Creative Design Portfolio -->
+                    <div class="project-card" onclick="openProjectModal('project9')">
+                        <img class="project-img" src="/images/project11.png" alt="Creative Design Portfolio" onclick="event.stopPropagation(); openProjectModal('project9')">
+                        <h3>Creative Design Portfolio</h3>
+                        <p>A comprehensive collection of creative design works including branding projects, social media graphics, marketing materials, and visual identity designs across different industries and platforms.</p>
+                        <div>
+                            <span class="tech-tag">Graphic Design</span>
+                            <span class="tech-tag">Canva</span>
+                            <span class="tech-tag">Branding</span>
+                            <span class="tech-tag">Social Media Design</span>
+                        </div>
+                        <div class="link-icons" onclick="event.stopPropagation()">
+                            <a href="https://www.behance.net/nabeelsoomro" target="_blank"><i class="fab fa-behance"></i> Behance Portfolio</a>
+                            <a href="#" onclick="openProjectModal('project9'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 10 - Digital Marketing Hub -->
+                    <div class="project-card" onclick="openProjectModal('project10')">
+                        <img class="project-img" src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Digital Marketing Hub" onclick="event.stopPropagation(); openProjectModal('project10')">
+                        <h3>Digital Marketing Hub</h3>
+                        <p>A comprehensive digital marketing platform offering SEO, social media management, and content marketing services with analytics dashboard and client reporting.</p>
+                        <div>
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">SEO</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                        <div class="link-icons" onclick="event.stopPropagation()">
+                            <a href="#" target="_blank"><i class="fas fa-eye"></i> Coming Soon</a>
+                            <a href="#" onclick="openProjectModal('project10'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 11 - E-Learning Platform -->
+                    <div class="project-card" onclick="openProjectModal('project11')">
+                        <img class="project-img" src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="E-Learning Platform" onclick="event.stopPropagation(); openProjectModal('project11')">
+                        <h3>E-Learning Platform</h3>
+                        <p>An interactive online learning platform with course management, video lectures, quizzes, and student progress tracking system.</p>
+                        <div>
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">LMS</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                        <div class="link-icons" onclick="event.stopPropagation()">
+                            <a href="#" target="_blank"><i class="fas fa-eye"></i> Preview</a>
+                            <a href="#" onclick="openProjectModal('project11'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 12 - Portfolio Website -->
+                    <div class="project-card" onclick="openProjectModal('project12')">
+                        <img class="project-img" src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Portfolio Website" onclick="event.stopPropagation(); openProjectModal('project12')">
+                        <h3>Modern Portfolio Website</h3>
+                        <p>A fully responsive developer portfolio with dark/light mode, smooth animations, project showcase, and contact form integration.</p>
+                        <div>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">AOS</span>
+                        </div>
+                        <div class="link-icons" onclick="event.stopPropagation()">
+                            <a href="#" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" onclick="openProjectModal('project12'); return false;"><i class="fas fa-info-circle"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="see-more-container">
+                <!-- <button id="seeMoreBtn" class="see-more-btn">
+                    <span>See More Projects</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button> -->
+                <a href="https://www.behance.net/nabeelsoomro" target="_blank" class="see-more-btn behance-btn">
+                    <i class="fab fa-behance"></i>
+                    <span> Projects on Behance</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="projectModal" class="project-modal" onclick="closeModalOnBackground(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Project Title</h2>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" class="modal-img" src="" alt="Project Image">
+                <p id="modalDescription" class="modal-description"></p>
+                <div id="modalTech" class="modal-tech"></div>
+                <div id="modalLinks" class="modal-links"></div>
+            </div>
+        </div>
+    </div>
+   
+        <!-- 6. CERTIFICATIONS / ACHIEVEMENTS -->
+        <section id="certifications">
+            <h2 class="section-title" data-aos="fade-right">🎓 Certifications & Achievements</h2>
+            <div class="cert-grid">
+
+                <!-- WordPress -->
+                <div class="cert-card">
+                    <i class="fas fa-laptop-code" style="font-size: 2rem;"></i>
+                    <h3>WordPress Development</h3>
+                    <p>Learnable/Online Certification - Custom themes, plugins, responsive design, and site
+                        optimization.</p>
+                    <span class="tech-tag">2023</span>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="cert-card">
+                    <i class="fab fa-html5" style="font-size: 2rem;"></i>
+                    <h3>Frontend Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript, Responsive Design, and Accessibility best practices.</p>
+                    <span class="tech-tag">2024</span>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="cert-card">
+                    <i class="fas fa-palette" style="font-size: 2rem;"></i>
+                    <h3>Graphic Design Certification</h3>
+                    <p>Canva / Online Design Platforms - Branding, Social Media Graphics, Creative Design Principles.
+                    </p>
+                    <span class="tech-tag">2023</span>
+                </div>
+
+                <!-- Other Achievements -->
+                <div class="cert-card">
+                    <i class="fas fa-trophy" style="font-size: 2rem;"></i>
+                    <h3>Freelance Projects Recognition</h3>
+                    <p>Successfully delivered multiple WordPress and design projects, praised for creativity and
+                        quality.</p>
+                    <span class="tech-tag">2024</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. SERVICES (Optional) -->
+        <section id="services">
+            <h2 class="section-title" data-aos="fade-right">🧰 Services I Offer</h2>
+            <div class="services-grid">
+
+                <!-- WordPress Development -->
+                <div class="service-card">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>WordPress Development</h3>
+                    <p>Custom websites, portfolio sites, e-commerce stores, responsive layouts, and performance
+                        optimization.</p>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="service-card">
+                    <i class="fas fa-palette service-icon"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Social media graphics, branding materials, banners, posters, and creative visual content.</p>
+                </div>
+
+                <!-- Other Services -->
+                <div class="service-card">
+                    <i class="fas fa-tools service-icon"></i>
+                    <h3>Other Digital Services</h3>
+                    <p>MS Word templates, Canva designs, project management support, and personalized digital solutions.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 8. EXPERIENCE -->
+        <section id="experience">
+            <h2 class="section-title" data-aos="fade-right">📊 Experience</h2>
+            <div class="exp-grid">
+
+                <!-- Web Developer -->
+                <div class="exp-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Developer & Team Leader (Rootlet Solution)</h3>
+                    <p>2024 - 2026 · Led 8+ client projects: built e-commerce sites, performed redesigns, and optimized
+                        performance, improving load times by 30%.</p>
+                </div>
+
+                <!-- Graphic Designer -->
+                <div class="exp-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Graphic Designer (Rootlet Solution)</h3>
+                    <p>2023 - 2024 · Designed marketing materials, social media graphics, and website visuals, enhancing
+                        brand identity.</p>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="exp-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Graphic Designer (JoyBox)</h3>
+                    <p>2024 - 2025 · Created engaging visual content for campaigns, improving user engagement and social
+                        media reach.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 9. BLOG / ARTICLES -->
+        <section id="blog">
+            <h2 class="section-title" data-aos="fade-right">📝 My Work & Insights</h2>
+            <div class="projects-grid">
+
+                <!-- WordPress Guide -->
+                <div class="project-card">
+                    <i class="fas fa-laptop-code" style="font-size: 2rem;"></i>
+                    <h3>WordPress Development Tips</h3>
+                    <p>Learn how to create responsive websites, customize themes, and optimize WordPress for
+                        performance.</p>
+                    <span class="tech-tag">Read Article →</span>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="project-card">
+                    <i class="fas fa-palette" style="font-size: 2rem;"></i>
+                    <h3>Graphic Design Workflow</h3>
+                    <p>Step-by-step guide on creating social media graphics, branding assets, and visual content for
+                        clients.</p>
+                    <span class="tech-tag">Read Article →</span>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="project-card">
+                    <i class="fas fa-code" style="font-size: 2rem;"></i>
+                    <h3>Frontend Development Basics</h3>
+                    <p>HTML, CSS, JavaScript, and responsive design tips for building modern websites.</p>
+                    <span class="tech-tag">Read Article →</span>
+                </div>
+
+                <!-- Freelance Insights -->
+                <div class="project-card">
+                    <i class="fas fa-briefcase" style="font-size: 2rem;"></i>
+                    <h3>Freelance Project Highlights</h3>
+                    <p>Sharing experiences from WordPress and design projects, client management, and lessons learned.
+                    </p>
+                    <span class="tech-tag">Read More →</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 10. CONTACT SECTION -->
+        <section id="contact">
+            <h2 class="section-title" data-aos="fade-right">📬 Let's Connect</h2>
+            <div class="contact-form" data-aos="fade-up">
+                <div style="margin-bottom: 1rem;">
+                    <i class="fas fa-envelope"></i> nabeelahmed1421@gmail.com &nbsp;&nbsp;|&nbsp;&nbsp; <i
+                        class="fab fa-whatsapp"></i> +92 3363280158<br> <i class="fas fa-map-marker-alt"></i> Karachi,
+                    Pakistan
+                </div>
+                <div class="input-group"> <input type="text" id="nameInput" placeholder="Your name *"> </div>
+                <div class="input-group"> <input type="email" id="emailInput" placeholder="Email address *"> </div>
+                <div class="input-group"> <textarea rows="4" id="msgInput"
+                        placeholder="Tell me about your next project or idea..."></textarea> </div> <button
+                    class="btn-primary" id="sendMsgBtn" style="width:100%">Send Message <i
+                        class="fas fa-paper-plane"></i></button>
+                <p id="formFeedback" style="margin-top:1rem; font-size:0.9rem;"></p>
+            </div>
+        </section>
+
+        <!-- 11. SOCIAL LINKS + 12. FOOTER -->
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nabeel-a-b132a921a/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- <a href="https://www.upwork.com/freelancers/~01d34f5fc8c0cb626a?mp_source=share" target="_blank"><i
+                        class="fab fa-upwork"></i></a> -->
+                <a href="https://www.behance.net/nabeelsoomro" target="_blank"><i class="fab fa-behance"></i></a>
+            </div>
+            <p style="margin-top: 1rem;">© 2025 Nabeel Ahmed — Web Developer | Software Engineer</p>
+            <p><a href="#home" style="color:#a594ff;">Back to top ↑</a></p>
+        </footer>
+    </div>
+ <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
